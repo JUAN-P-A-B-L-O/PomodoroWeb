@@ -50,7 +50,7 @@ bShort.addEventListener(`click`, () => {
     corpo.style.backgroundColor = `rgba(4, 150, 130, 0.877)`;
     body.style.backgroundColor = `rgba(4, 150, 130, 0.877)`;
     header.style.backgroundColor = `rgba(4, 150, 130, 0.877)`;
-    corpoCronometro.style.backgroundColor = `rgba(4, 150, 130, 0.733)`;
+    corpoCronometro.style.backgroundColor = `rgba(4, 180, 145, 0.622)`;
     semaforo = 2;
     startButton.style.color = `rgba(4, 150, 130, 0.877)`;
 
