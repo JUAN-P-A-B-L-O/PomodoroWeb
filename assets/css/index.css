@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    min-width: 460px;
+    background-color: rgba(212, 74, 74, 0.89);
+
+}
+button{
+    border-radius: 5px;
+    
+    background-color: rgba(0, 0, 0, 0.062);
+    /* background-color: aliceblue; */
+    border: none;
+    width: 6em;
+    height: 120%;
+    color: rgb(255, 255, 255);
+    margin: 2%;
+    cursor: pointer;
+    
+}
+.buttonApertado{
+    background-color: red;
+    border: none;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.bu-sube button{
+    background-color: rgba(255, 246, 246, 0.247);
+    justify-content: space-evenly;
+    display: flex;
+    width: 7em;
+    height: 90%;
+    padding-top: 3%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+ 
+
+}
+.bu-sube button img{
+    width: 20%;
+    /* margin-top: 60%; */
+}
+.primeiro-bloco{
+    background-color: rgba(212, 74, 74, 0.89);
+    color: white;
+    padding: 0.7%;
+    padding-bottom: 50%;
+    transition: 1.5s;
+}
+.bloco1{
+    max-width: 600px;
+    margin: auto;
+    min-width: 450px;
+    height: 93vh;
+}
+/* header ////////////////*/
+
+header{
+    width: 100%;
+    padding-top: 1vh;
+    background-color: rgba(212, 74, 74, 0.89);
+    height: 7vh;
+
+}
+header img{
+    width: 17px;
+    height: 13px;
+}
+
+header label{
+    cursor: pointer;
+}
+
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 2%;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    max-width: 600px;
+    margin: auto;
+    min-width: 450px;
+}
+.logo{
+    margin-top: 7%;
+}
+.bu-sube{
+    display: flex;
+    margin-bottom: 1%;
+    margin-top: 0;
+}
+.cro-base{
+    /* width: 480px; */
+    margin: auto;
+    margin-top: 4%;
+
+}
+.cronometro{
+    background-color: rgba(241, 110, 110, 0.685);
+    transition: 1s;
+    padding: 2%;
+    border-radius: 5px;
+    margin: 5%;
+
+}
+.cronometro div h3{
+    
+    font-size: 10em;
+    text-align: center;
+}
+.crono-butoes{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 18%;
+    margin-right: 18%;
+
+}
+.crono-butoes button{
+    color: white;
+    border: none;
+    background-color: initial;
+    font-size: 1em;
+    display: block;
+    width: 120%;
+    height: 150%;
+}
+.crono-butoes button:focus{
+    background-color: rgba(0, 0, 0, 0.342);
+}
+.crono-butoes button:active{
+    background-color: rgba(0, 0, 0, 0.342);
+}
+.start{
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: white;
+    color: rgba(212, 74, 74, 0.89);
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 15em; 
+    height: 4em;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.171);
+    transition: 0.13s;
+}
+.start:hover{
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+.text{
+    text-align: center;
+}
+.task-i{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    margin-bottom: 3%;
+    padding-bottom: 4%;
+}
+.task-i button {
+    border-radius: 0;
+    width: 25px;
+    height: 30px;
+   
+}
+.task h3{
+    text-align: center;
+}
+.add-task button{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 60px;
+    border: 2px dashed rgba(255, 255, 255, 0.397);
+    color: white;
+}
+
+
+/* //////Telas para os botoes */
+/* SETTING */
+.setting{
+    background-color: white;
+    color: black;
+    width: 25%;
+    height: 50vh;
+    margin-left: 35%;
+    
+    position: fixed;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+.setting-2{
+    opacity: 0;
+    position: fixed;
+    width: 0%;
+}
+.titulo{
+    padding: 4%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.192);
+    color: grey;
+    margin: auto 4%;
+    
+    
+}
+.titulo button {
+    width: 150%;
+    border-radius: 5px;
+}
+.background{
+    background-color: rgba(0, 0, 0, 0.349);
+    width: 100%;
+    height: 1000px;
+    opacity: 1;
+    position: fixed;
+    
+}
+.time-control{
+    border-bottom: 1px solid rgba(34, 34, 34, 0.192);
+    margin: auto 4%;
+
+}
+.time-control-button {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    color: gray;
+    font-size: medium;
+    margin-bottom: 1em;
+}
+.time-control-button input{
+    width: 70%;
+    height: 2.5em;
+    background-color: rgba(221, 218, 218, 0.377);
+    border: none;
+    border-radius: 5px;
+    color: rgb(83, 83, 83);
+}
+.time-control div h3{
+    color: rgb(75, 75, 75);
+    text-align: left;
+    margin-left: 5%;
+    font-size: small;
+}
+
+
+
+@media (max-witdh=460px){
+    button{
+        font-size: 1px;
+    }
+}

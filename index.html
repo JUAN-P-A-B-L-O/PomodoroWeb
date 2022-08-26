@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pomorodo Web para auxiliar nos estudos...">
+
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <div class="background-before"></div>
+
+
+
+
+
+    <header>
+        <section class="cabecalho">
+            <div>
+                <h1 class="logo">&Theta;Pomofocus</h1>
+            </div>
+            <nav class="bu-sube">
+                <button>
+                    <img src="./assets/img/graph-white.png" alt="report imagem" srcset="">
+                    <div><p>Report</p></div>
+                </button>
+                <button class="settingButton">
+                    <img src="./assets/img/config-white.png" alt="settings imagem" srcset="">
+                    <div><p>Setting</p> </div>
+                </button>
+                <button>
+                    <img src="./assets/img/user-white.png" alt="login imagem" srcset="">
+                    <div><p>Login</p></div>
+                </button>
+            </nav>
+        </section>
+
+        <section class="setting-2">
+            <div class="titulo">
+                <div>Timer Setting</div>
+                <div><button type="button" class="tituloButtonFecha">X</button></div>
+            </div>
+            <div class="time-control">
+                <div><h3>Time (minutes)</h3></div>
+                <div class="time-control-button">
+                    <div><label for="pomodoro-input">pomodoro</label><input type="number" value="25" class="pomodoro-input" name="" id="pomodoro-input"></div>
+                    <div><label for="short-input">Short Break</label><input type="number" value="5" class="short-input" name="" id="short-input"></div>
+                    <div><label for="long-input">Long Break</label><input type="number" value="10" class="long-input" name="" id="long-input"></div>
+                </div>
+            </div>
+        </section>
+        
+    </header>
+
+    <main class="primeiro-bloco">
+
+        
+
+        <section class="bloco1">
+            
+
+            <section class="cro-base">
+                <div class="cronometro">
+                    <nav class="crono-butoes">
+                        <div> <button type="button" class="pomodoro">Pomodoro</button> </div>
+                        <div> <button type="button" class="short">Short Break</button> </div>
+                        <div> <button type="button" class="long">Long Break</button> </div>
+                    </nav>
+
+                    <div class="numero">
+                        <h3>25:00</h3>
+                    </div>
+                    <button class="start" type="button">START</button>
+                </div>
+                <div class="text">
+                    <h3>#1<br>Time to focus!</h3>
+                </div>
+                <div class="task-i">
+
+                    <div>Tasks</div>
+                    <div><button>...</button></div>
+
+                </div>
+                <div class="add-task"> <button>Add Task</button></div>
+
+            </section>
+        </section>
+    </main>
+
+</body>
+
+
+<script src="./index.js"></script>
+
+</html>
