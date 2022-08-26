@@ -12,6 +12,7 @@ const backgroundBefore = document.querySelector(`.background-before`);
 const pomodoroTimer = document.querySelector(`.pomodoro-input`);
 const shortTimer = document.querySelector(`.short-input`);
 const longTimer = document.querySelector(`.long-input`);
+const body = document.querySelector(`body`);
 
 //// variaveis do CRONOMETRO //////////
 const resposta = document.querySelector(`.numero`);
@@ -45,6 +46,7 @@ bShort.addEventListener(`click`, () => {
     formataTimer(new Date(tempoTimer));
     // resposta.innerHTML= `<h1>${}</h1>`
     corpo.style.backgroundColor = `rgba(4, 150, 130, 0.877)`;
+    body.style.backgroundColor = `rgba(4, 150, 130, 0.877)`;
     corpoCronometro.style.backgroundColor = `rgba(4, 150, 130, 0.733)`;
     semaforo = 2;
     startButton.style.color = `rgba(4, 150, 130, 0.877)`;
@@ -57,6 +59,7 @@ bLong.addEventListener(`click`, () => {
     tempoTimer = 300000 * 2;
     formataTimer(new Date(tempoTimer));
     corpo.style.backgroundColor = `rgba(34, 135, 194, 0.966)`;
+    body.style.backgroundColor = `rgba(27, 166, 247, 0.5)`;
     corpoCronometro.style.backgroundColor = `rgba(27, 166, 247, 0.5)`;
     semaforo = 3;
     startButton.style.color = `rgba(34, 135, 194, 0.966)`;

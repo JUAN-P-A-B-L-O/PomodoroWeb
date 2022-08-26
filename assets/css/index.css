@@ -64,7 +64,7 @@ button:hover{
 header{
     width: 100%;
     padding-top: 1vh;
-    background-color: rgba(212, 74, 74, 0.89);
+    /* background-color: rgba(212, 74, 74, 0.89); */
     height: 7vh;
 
 }
