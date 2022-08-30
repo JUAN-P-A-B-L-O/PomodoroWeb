@@ -79,7 +79,7 @@ header label{
 
 
 .cabecalho{
-    display: block;
+    display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(53, 53, 53, 0.26);
     padding: 2%;
