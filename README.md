@@ -1,2 +1,2 @@
 # PomodoroWeb
- Site  para fins de treinamento, de modo a recriar o site pomofocus.io
+ Site feito para fins de treinamento, de modo a recriar o site pomofocus.io
