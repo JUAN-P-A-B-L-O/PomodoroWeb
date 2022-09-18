@@ -46,7 +46,7 @@ button:hover{
     /* margin-top: 60%; */
 }
 .primeiro-bloco{
-    background-color: rgba(212, 74, 74, 0.89);
+    background-color: rgba(212, 74, 74, 0.959);
     color: white;
     padding: 0.7%;
     padding-bottom: 50%;
@@ -63,7 +63,7 @@ button:hover{
 header{
     width: 100%;
     padding-top: 1vh;
-    background-color: rgba(212, 74, 74, 0.89);
+    background-color: rgba(212, 74, 74, 0.959);
     height: 7vh;
     transition: 1.5s;
 
