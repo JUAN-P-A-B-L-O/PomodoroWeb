@@ -74,7 +74,7 @@ bLong.addEventListener(`click`, () => {
 
 function estisoHome() {
 
-
+    startButton.textContent=`START`;
     startButton.style.height = `4em`;
     startButton.style.marginTop = `5%`;
     startButton.style.borderBottom = `6px solid rgba(0, 0, 0, 0.171)`;
@@ -110,9 +110,17 @@ startButton.addEventListener(`click`, () => {
 
         return;
     }
-    startButton.style.borderBottom = `2px solid black`
+    startButtonAtivadoEstilo();
     inicia();
 });
+
+
+function startButtonAtivadoEstilo(){
+    startButton.style.borderBottom = `2px solid black`
+    startButton.textContent= `STOP`;
+}
+
+
 
 ////  PARTE DE ANIMACOES BoTOES
 function fechaSetting() {
