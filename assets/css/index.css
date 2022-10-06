@@ -113,6 +113,7 @@ header label{
     padding: 2%;
     border-radius: 5px;
     margin: 5%;
+    position: relative;
 
 }
 .cronometro div h3{
@@ -149,6 +150,13 @@ header label{
     width: 4em;
     height: 4em;
     background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 6%;
+    margin-right: 2%;
+    padding-left: 2%;
+    display: none;
 }
 
 
@@ -208,8 +216,8 @@ header label{
     color: black;
     width: 25%;
     height: 50vh;
-    margin-left: 35%;
-    
+    margin-left: 38%;
+    z-index: 10000;
     position: fixed;
     text-align: center;
     border-radius: 10px;

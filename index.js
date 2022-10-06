@@ -14,6 +14,8 @@ const shortTimer = document.querySelector(`.short-input`);
 const longTimer = document.querySelector(`.long-input`);
 const body = document.querySelector(`body`);
 const header = document.querySelector(`header`);
+const skipBtn = document.querySelector(`.skipBtn`);
+
 //// variaveis do CRONOMETRO //////////
 const resposta = document.querySelector(`.numero`);
 let aux_cronometro = 0;
@@ -73,7 +75,7 @@ bLong.addEventListener(`click`, () => {
 /////   PARTE DO CRONOMETRO ///////
 
 function estisoHome() {
-
+    skipBtn.style.display = `none`;
     startButton.textContent=`START`;
     startButton.style.height = `4em`;
     startButton.style.marginTop = `5%`;
@@ -81,7 +83,7 @@ function estisoHome() {
 }
 
 function inicia() {
-    
+    skipBtn.style.display = `block`;
     contaUp = setInterval(() => {
        
         aux_cronometro += 1000;
