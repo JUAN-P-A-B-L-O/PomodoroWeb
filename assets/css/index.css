@@ -143,6 +143,16 @@ header label{
 .crono-butoes button:active{
     background-color: rgba(0, 0, 0, 0.342);
 }
+
+
+.skipBtn{
+    width: 4em;
+    height: 4em;
+    background-color: blue;
+}
+
+
+
 .start{
     display: block;
     margin: auto;
