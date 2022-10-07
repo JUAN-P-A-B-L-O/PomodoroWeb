@@ -99,6 +99,7 @@ function inicia() {
        
         aux_cronometro += 1000;
         let respostaCompleta = new Date(tempoTimer - aux_cronometro);
+        
         formataTimer(respostaCompleta);
 
     }, 1000);
