@@ -24,10 +24,9 @@ let contaUp;
 let tempoTimer = (pomodoroTimer.value) * 60 * 1000;
 let mutex = 0;
 let semaforo = 1;
+let skipBtnAux=0;
 
-
-
-bPomo.addEventListener(`click`, () => {
+function btnPomoFunction(){
     clearInterval(contaUp);
     aux_cronometro = 0;
     estisoHome();
@@ -39,10 +38,14 @@ bPomo.addEventListener(`click`, () => {
     corpoCronometro.style.backgroundColor = `rgba(241, 110, 110, 0.685)`;
     semaforo = 1;
     startButton.style.color = `rgba(212, 74, 74, 0.89)`;
-})
+    mutex=0;
+}
+
+bPomo.addEventListener(`click`, btnPomoFunction);
 
 // mudando o valor do timer sempre pro pomodoro, talvez a boa seja criar uma variavel timer para cada
-bShort.addEventListener(`click`, () => {
+
+function btnShortFunction(){
     clearInterval(contaUp);
     aux_cronometro = 0;
     estisoHome();
@@ -55,9 +58,13 @@ bShort.addEventListener(`click`, () => {
     corpoCronometro.style.backgroundColor = `rgba(4, 180, 145, 0.622)`;
     semaforo = 2;
     startButton.style.color = `rgba(4, 150, 130, 0.877)`;
+    mutex=0;
 
-})
-bLong.addEventListener(`click`, () => {
+}
+
+bShort.addEventListener(`click`, btnShortFunction);
+
+function btnLongFunction(){
     clearInterval(contaUp);
     aux_cronometro = 0;
     estisoHome();
@@ -69,7 +76,11 @@ bLong.addEventListener(`click`, () => {
     corpoCronometro.style.backgroundColor = `rgba(27, 166, 247, 0.5)`;
     semaforo = 3;
     startButton.style.color = `rgba(34, 135, 194, 0.966)`;
-})
+    mutex=0;
+}
+
+
+bLong.addEventListener(`click`, btnLongFunction);
 
 
 /////   PARTE DO CRONOMETRO ///////
@@ -122,7 +133,20 @@ function startButtonAtivadoEstilo(){
     startButton.textContent= `STOP`;
 }
 
-
+skipBtn.addEventListener(`click`,()=>{
+    if(skipBtnAux===3&& semaforo ===1){
+        btnLongFunction();
+        skipBtnAux=0;
+        return;
+    }
+    if(semaforo===2){
+        btnPomoFunction();
+        return;
+    }
+    skipBtnAux+=1;
+    btnShortFunction();
+    mutex=0;
+})
 
 ////  PARTE DE ANIMACOES BoTOES
 function fechaSetting() {
