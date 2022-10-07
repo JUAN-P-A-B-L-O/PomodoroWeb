@@ -1,16 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
-    min-width: 460px; 
+    min-width: 460px;
 }
-button{
+
+button {
     border-radius: 5px;
-    
+
     background-color: rgba(0, 0, 0, 0.062);
 
     /* background-color: aliceblue; */
@@ -20,16 +22,19 @@ button{
     color: rgb(255, 255, 255);
     margin: 2%;
     cursor: pointer;
-    
+
 }
-.buttonApertado{
+
+.buttonApertado {
     background-color: red;
     border: none;
 }
-button:hover{
+
+button:hover {
     background-color: rgba(0, 0, 0, 0.192);
 }
-.bu-sube button{
+
+.bu-sube button {
     background-color: rgba(255, 246, 246, 0.247);
     justify-content: space-evenly;
     display: flex;
@@ -38,29 +43,33 @@ button:hover{
     padding-top: 3%;
     padding-left: 2.5%;
     padding-right: 2.5%;
- 
+
 
 }
-.bu-sube button img{
+
+.bu-sube button img {
     width: 20%;
     /* margin-top: 60%; */
 }
-.primeiro-bloco{
+
+.primeiro-bloco {
     background-color: rgba(212, 74, 74, 0.959);
     color: white;
     padding: 0.7%;
     padding-bottom: 50%;
     transition: 1.5s;
 }
-.bloco1{
+
+.bloco1 {
     max-width: 600px;
     margin: auto;
     min-width: 450px;
     height: 93vh;
 }
+
 /* header ////////////////*/
 
-header{
+header {
     width: 100%;
     padding-top: 1vh;
     background-color: rgba(212, 74, 74, 0.959);
@@ -68,17 +77,18 @@ header{
     transition: 1.5s;
 
 }
-header img{
+
+header img {
     width: 17px;
     height: 13px;
 }
 
-header label{
+header label {
     cursor: pointer;
 }
 
 
-.cabecalho{
+.cabecalho {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(53, 53, 53, 0.26);
@@ -92,22 +102,26 @@ header label{
     min-width: 450px;
     /* transition: 1,5s; */
 }
-.logo{
+
+.logo {
     margin-top: 7%;
     color: white;
 }
-.bu-sube{
+
+.bu-sube {
     display: flex;
     margin-bottom: 1%;
     margin-top: 0;
 }
-.cro-base{
+
+.cro-base {
     /* width: 480px; */
     margin: auto;
     margin-top: 4%;
 
 }
-.cronometro{
+
+.cronometro {
     background-color: rgba(241, 110, 110, 0.685);
     transition: 1s;
     padding: 2%;
@@ -116,12 +130,14 @@ header label{
     position: relative;
 
 }
-.cronometro div h3{
-    
+
+.cronometro div h3 {
+
     font-size: 10em;
     text-align: center;
 }
-.crono-butoes{
+
+.crono-butoes {
     display: flex;
     justify-content: space-between;
     margin: 10px;
@@ -129,7 +145,8 @@ header label{
     margin-right: 18%;
 
 }
-.crono-butoes button{
+
+.crono-butoes button {
     color: white;
     border: none;
     background-color: initial;
@@ -138,30 +155,38 @@ header label{
     width: 120%;
     height: 150%;
 }
-.crono-butoes button:focus{
+
+.crono-butoes button:focus {
     background-color: rgba(0, 0, 0, 0.342);
 }
-.crono-butoes button:active{
+
+.crono-butoes button:active {
     background-color: rgba(0, 0, 0, 0.342);
 }
 
 
-.skipBtn{
-    width: 4em;
-    height: 4em;
-    background-color: blue;
+.skipBtn {
+  
     position: absolute;
     bottom: 0;
-    right: 0;
-    margin-bottom: 6%;
-    margin-right: 2%;
+    right: 20px;
+    margin-bottom: 8%;
+    /* margin-right: 2%; */
     padding-left: 2%;
     display: none;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #f4f4f5f8;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+.skipBtn:hover{
+    opacity: 0.5;
 }
 
 
-
-.start{
+.start {
     display: block;
     margin: auto;
     border: none;
@@ -169,37 +194,42 @@ header label{
     color: rgba(212, 74, 74, 0.89);
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 15em; 
+    width: 15em;
     height: 4em;
     margin-top: 5%;
     margin-bottom: 3%;
     border-bottom: 6px solid rgba(0, 0, 0, 0.171);
     transition: 0.13s;
 }
-.start:hover{
+
+.start:hover {
     background-color: rgba(255, 255, 255, 0.514);
 }
 
-.text{
+.text {
     text-align: center;
 }
-.task-i{
+
+.task-i {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid white;
     margin-bottom: 3%;
     padding-bottom: 4%;
 }
+
 .task-i button {
     border-radius: 0;
     width: 25px;
     height: 30px;
-   
+
 }
-.task h3{
+
+.task h3 {
     text-align: center;
 }
-.add-task button{
+
+.add-task button {
     display: block;
     margin: auto;
     width: 100%;
@@ -211,7 +241,7 @@ header label{
 
 /* //////Telas para os botoes */
 /* SETTING */
-.setting{
+.setting {
     background-color: white;
     color: black;
     width: 25%;
@@ -223,38 +253,44 @@ header label{
     border-radius: 10px;
     transition: 0.25s;
 }
-.setting-2{
+
+.setting-2 {
     opacity: 0;
     position: fixed;
     width: 0%;
 }
-.titulo{
+
+.titulo {
     padding: 4%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(34, 34, 34, 0.192);
     color: grey;
     margin: auto 4%;
-    
-    
+
+
 }
+
 .titulo button {
     width: 150%;
     border-radius: 5px;
 }
-.background{
+
+.background {
     background-color: rgba(0, 0, 0, 0.349);
     width: 100%;
     height: 1000px;
     opacity: 1;
     position: fixed;
-    
+
 }
-.time-control{
+
+.time-control {
     border-bottom: 1px solid rgba(34, 34, 34, 0.192);
     margin: auto 4%;
 
 }
+
 .time-control-button {
     display: flex;
     justify-content: space-between;
@@ -264,7 +300,8 @@ header label{
     font-size: medium;
     margin-bottom: 1em;
 }
-.time-control-button input{
+
+.time-control-button input {
     width: 70%;
     height: 2.5em;
     background-color: rgba(221, 218, 218, 0.377);
@@ -272,7 +309,8 @@ header label{
     border-radius: 5px;
     color: rgb(83, 83, 83);
 }
-.time-control div h3{
+
+.time-control div h3 {
     color: rgb(75, 75, 75);
     text-align: left;
     margin-left: 5%;
@@ -281,8 +319,8 @@ header label{
 
 
 
-@media (max-witdh=460px){
-    button{
+@media (max-witdh=460px) {
+    button {
         font-size: 1px;
     }
 }

@@ -102,6 +102,7 @@ function inicia() {
         formataTimer(respostaCompleta);
 
     }, 1000);
+
    
     mutex = 1;
 }
