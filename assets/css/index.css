@@ -184,7 +184,9 @@ header label {
 .skipBtn:hover{
     opacity: 0.5;
 }
-
+.background-before{
+    z-index: 2;
+}
 
 .start {
     display: block;

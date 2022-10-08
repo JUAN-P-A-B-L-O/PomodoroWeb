@@ -101,6 +101,10 @@ function inicia() {
         let respostaCompleta = new Date(tempoTimer - aux_cronometro);
         
         formataTimer(respostaCompleta);
+        if(tempoTimer===aux_cronometro) {
+            clearInterval(contaUp);
+            skipBtnFunctions();
+        }
 
     }, 1000);
 
@@ -135,7 +139,7 @@ function startButtonAtivadoEstilo(){
     startButton.textContent= `STOP`;
 }
 
-skipBtn.addEventListener(`click`,()=>{
+function skipBtnFunctions(){
     if(skipBtnAux===3&& semaforo ===1){
         btnLongFunction();
         skipBtnAux=0;
@@ -148,7 +152,9 @@ skipBtn.addEventListener(`click`,()=>{
     skipBtnAux+=1;
     btnShortFunction();
     mutex=0;
-})
+}
+
+skipBtn.addEventListener(`click`,skipBtnFunctions)
 
 ////  PARTE DE ANIMACOES BoTOES
 function fechaSetting() {
